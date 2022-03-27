@@ -1,8 +1,3 @@
-/*
- * Copyright (c) 2022, Avalon Williams
- * See file License for details.
- */
-
 /*-
  * Copyright (c) 1985, 1986, 1992, 1993
  *	The Regents of the University of California.  All rights reserved.
@@ -71,7 +66,6 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include "compress.h"
-#include "compat.h"
 
 #define MINIMUM(a, b)	(((a) < (b)) ? (a) : (b))
 

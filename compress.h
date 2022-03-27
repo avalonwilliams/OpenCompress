@@ -1,4 +1,7 @@
-
+/*
+ * Copyright (c) 2022 Avalon Williams
+ * See file LICENSE for details
+ */
 
 /*
  * Copyright (c) 1997 Michael Shalayeff
@@ -28,6 +31,7 @@
  */
 
 #include <sys/stat.h>
+#include <errno.h>
 
 struct z_info {
 	u_int32_t mtime;	/* timestamp */
@@ -56,6 +60,10 @@ enum program_mode {
 #define	FAILURE	1
 #define	WARNING	2
 
+#ifndef EFTYPE
+	#define EFTYPE EINVAL
+#endif
+
 extern char null_magic[];
 
 extern void *z_ropen(int, char *, int);
@@ -80,4 +88,4 @@ extern int null_write(void *, const char *, int);
 extern int null_close(void *, struct z_info *, const char *, struct stat *);
 extern int null_flush(void *, int);
 
-extern void setfile(const char *, int, struct stat *);   
+extern void setfile(const char *, int, struct stat *);

@@ -1,8 +1,4 @@
 /*
- * Copyright (c) 2022 Avalon Williams
- * See file LICENSE for details
- */
-/*
  * Copyright (c) 1997 Michael Shalayeff
  * All rights reserved.
  *
@@ -70,7 +66,6 @@
 #include <limits.h>
 #include <zlib.h>
 #include "compress.h"
-#include "compat.h"
 
 /* gzip flag byte */
 #define ASCII_FLAG   0x01 /* bit 0 set: file probably ascii text */
