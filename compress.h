@@ -89,3 +89,6 @@ extern int null_close(void *, struct z_info *, const char *, struct stat *);
 extern int null_flush(void *, int);
 
 extern void setfile(const char *, int, struct stat *);
+
+extern size_t strlcat(char *dst, const char *str, size_t dsize);
+extern size_t strlcpy(char *dst, const char *src, size_t dsize);

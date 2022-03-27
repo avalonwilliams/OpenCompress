@@ -6,7 +6,7 @@ MANPREFIX = $(DESTDIR)$(PREFIX)/share/man
 
 CPPFLAGS  = -D_DEFAULT_SOURCE -D_BSD_SOURCE
 CFLAGS    = -std=c99 -pedantic -Wall -O1
-LDFLAGS   = -lz -lbsd
+LDFLAGS   = -lz
 
 # if y, make install will install gzip and zcat, as additional components
 #

@@ -1,7 +1,7 @@
 include config.mk
 
 BIN = compress
-SRC = main.c zopen.c gzopen.c nullopen.c
+SRC = main.c zopen.c gzopen.c nullopen.c string.c
 OBJ = $(SRC:.c=.o)
 BINDIR = $(DESTDIR)$(PREFIX)/bin
 

@@ -14,7 +14,7 @@ hardly anyone uses, like AmigaOS, Atari ST, OS/2 Warp, and VMS. This can act
 as a drop-in replacement for GNU gzip.
 
 ## Install
-This program depends on libbsd and zlib.
+This program depends on zlib.
 To install just compress and uncompress, simply use
 ```sh
 make && sudo make install

@@ -46,7 +46,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
-#include <bsd/string.h>
 #include <unistd.h>
 #include <limits.h>
 #include <fcntl.h>
